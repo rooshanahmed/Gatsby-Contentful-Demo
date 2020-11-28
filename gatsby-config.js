@@ -6,5 +6,13 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `gt5dpbjkpfc7`,
+        accessToken: `D3gpmfIsMAeVseWHQ7occIxBZhw4IRa2zX46_rKGUVk`,
+      },
+    },
+  ],
 }
