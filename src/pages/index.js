@@ -9,6 +9,10 @@ export default ({ data }) => {
       <div>{data.allContentfulBlogPost.edges[1].node.title}</div>
       <div>{data.allContentfulBlogPost.edges[1].node.publicationDate}</div>
       <div>{data.allContentfulBlogPost.edges[1].node.content.raw}</div>
+      <br />
+      <div>{data.allContentfulBlogPost.edges[0].node.title}</div>
+      <div>{data.allContentfulBlogPost.edges[0].node.publicationDate}</div>
+      <div>{data.allContentfulBlogPost.edges[0].node.content.raw}</div>
     </div>
   )
 }
