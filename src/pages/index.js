@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
 export default ({ data }) => {
-  console.log(data)
+  console.log(data);
 
   return (
     <div>
@@ -14,8 +14,8 @@ export default ({ data }) => {
       <div>{data.allContentfulBlogPost.edges[0].node.publicationDate}</div>
       <div>{data.allContentfulBlogPost.edges[0].node.content.raw}</div>
     </div>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query {
@@ -31,4 +31,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
